@@ -26,5 +26,12 @@ public class test3 {
 		String title = driver.getTitle();
 		System.out.println(title);
 	}
+	
+	public void test2(WebDriver driver) {
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+		String title = driver.getTitle();
+		System.out.println(title);
+	}
 
 }
