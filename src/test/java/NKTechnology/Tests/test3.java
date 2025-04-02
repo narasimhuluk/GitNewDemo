@@ -14,6 +14,8 @@ public class test3 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("www.google.com");
+		String url=driver.getCurrentUrl();
+		System.out.println(url);
 
 	}
 
