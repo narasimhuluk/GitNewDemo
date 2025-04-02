@@ -9,16 +9,22 @@ public class test3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		WebDriver driver=new ChromeDriver();
+
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("www.google.com");
-		String url=driver.getCurrentUrl();
+		String url = driver.getCurrentUrl();
 		System.out.println(url);
-		String title=driver.getTitle();
+		String title = driver.getTitle();
 		System.out.println(title);
+	}
 
+	public void test1(WebDriver driver) {
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+		String title = driver.getTitle();
+		System.out.println(title);
 	}
 
 }
