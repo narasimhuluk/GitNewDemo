@@ -16,6 +16,8 @@ public class test3 {
 		driver.get("www.google.com");
 		String url=driver.getCurrentUrl();
 		System.out.println(url);
+		String title=driver.getTitle();
+		System.out.println(title);
 
 	}
 
